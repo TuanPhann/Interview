@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lazy Loading Animation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Animated Element with Lazy Loading</h1>
+    </header>
+
+    <section id="animated-section">
+      <div class="animated-element"></div>
+      <!-- Lazy loaded images -->
+      <img data-src="images/anh1.jpg" alt="Gallery Image 1" class="lazy-load" />
+      <img data-src="images/anh2.jpg" alt="Gallery Image 2" class="lazy-load" />
+      <img data-src="images/anh3.jpg" alt="Gallery Image 2" class="lazy-load" />
+      <img data-src="images/anh4.jpg" alt="Gallery Image 2" class="lazy-load" />
+      <img data-src="images/anh5.jpg" alt="Gallery Image 2" class="lazy-load" />
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

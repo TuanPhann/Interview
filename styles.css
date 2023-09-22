@@ -1,0 +1,46 @@
+/* styles.css */
+header {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+}
+
+#animated-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.animated-element {
+  padding: 10px;
+  margin-right: 30px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ffcc00;
+  display: inline-block;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-40px);
+  }
+  60% {
+    transform: translateY(-20px);
+  }
+}
+
+/* For lazy loading images */
+.lazy-load {
+  opacity: 0;
+  transition: opacity 4s;
+  width: 100%;
+  max-width: 400px;
+}
